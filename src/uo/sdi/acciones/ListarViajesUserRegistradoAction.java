@@ -15,6 +15,8 @@ import uo.sdi.persistence.PersistenceFactory;
 import alb.util.log.Log;
 
 public class ListarViajesUserRegistradoAction implements Accion {
+	
+	//Xurxo: borra la consulta de buscar viajes si al final no la usas.
 
 	@Override
 	public String execute(HttpServletRequest request,
@@ -25,9 +27,13 @@ public class ListarViajesUserRegistradoAction implements Accion {
 		
 		HttpSession session = request.getSession();
 		
+		User user = (User) session.getAttribute("user");
+		
 		try {
 			
-			viajes = PersistenceFactory.newTripDao().findAll();
+			viajes=PersistenceFactory.newTripDao().findAllExceptPromoterId(user.getId());
+			
+/*			viajes = PersistenceFactory.newTripDao().findAll();
 			
 			List<Trip> viajesFiltrados = new ArrayList<>();
 			
@@ -55,7 +61,7 @@ public class ListarViajesUserRegistradoAction implements Accion {
 //					Trip viaje = PersistenceFactory.newTripDao().findById(idViaje);
 //					viajesFiltrados.add(viaje);
 //				}
-//			}
+//			}*/
 			
 			//si el usuario actual ha recibido confirmación o denegación de la plaza. (Tabla Seats)
 

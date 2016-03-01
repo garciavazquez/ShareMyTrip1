@@ -164,5 +164,13 @@ public class TripDaoJdbcImpl implements TripDao {
 				new TripMapper(),
 				id, arrivalDate);
 	}
+	
+	@Override
+	public List<Trip> findAllExceptPromoterId(Long id) {
+		return jdbcTemplate.queryForList(
+				"TRIP_FIND_ALL_EXCEPT_PROMOTER_ID", 
+				new TripMapper(),
+				id);
+	}
 
 }
