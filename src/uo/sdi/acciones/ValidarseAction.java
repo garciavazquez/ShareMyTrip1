@@ -17,10 +17,11 @@ public class ValidarseAction implements Accion {
 		
 		String resultado="EXITO";
 		String nombreUsuario=request.getParameter("nombreUsuario");
+		String passUsuario=request.getParameter("passUsuario");
 		HttpSession session=request.getSession();
 		if (session.getAttribute("user")==null) {
 			UserDao dao = PersistenceFactory.newUserDao();
-			User userByLogin = dao.findByLogin(nombreUsuario);
+			User userByLogin = dao.findByLoginAndPass(nombreUsuario, passUsuario);
 			if (userByLogin!=null) {
 				session.setAttribute("user", userByLogin);
 				int contador=Integer.parseInt((String)request.getServletContext().getAttribute("contador"));
@@ -29,7 +30,7 @@ public class ValidarseAction implements Accion {
 			}
 			else {
 				session.invalidate();
-				Log.info("El usuario [%s] no está registrado",nombreUsuario);
+				Log.info("El usuario [%s] no está registrado o la contraseña no es correcta",nombreUsuario);
 				resultado="FRACASO";
 			}
 		}

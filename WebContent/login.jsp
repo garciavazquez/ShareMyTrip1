@@ -12,6 +12,10 @@
 	    	<td><input type="text" name="nombreUsuario" align="left" size="15"></td>
       	</tr>
       	<tr>
+	    	<td align="right">Contraseña</td>
+	    	<td><input type="password" name="passUsuario" align="left" size="15"></td>
+      	</tr>
+      	<tr>
     	    <td><input type="submit" value="Enviar"/></td>
       	</tr>
       </table>
@@ -45,11 +49,11 @@
       	</tr>
       	<tr> 
     		<td align="right">Contraseña</td>
-	    	<td><input type="text" name="contrasenaUsuario" align="left" size="15"></td>
+	    	<td><input type="password" name="contrasenaUsuario" align="left" size="15"></td>
       	</tr>
       	<tr> 
     		<td align="right">Repite la contraseña</td>
-	    	<td><input type="text" name="contrasenaRepeUsuario" align="left" size="15"></td>
+	    	<td><input type="password" name="contrasenaRepeUsuario" align="left" size="15"></td>
       	</tr>
       	
       	<tr>

@@ -22,8 +22,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 	public void init() throws ServletException {  
 		crearMapaAcciones();
 		crearMapaDeJSP();
-    }
-	
+    }	
 
 	public void doGet(HttpServletRequest req, HttpServletResponse res)
 				throws IOException, ServletException {
@@ -104,7 +103,7 @@ public class Controlador extends javax.servlet.http.HttpServlet {
 		Map<String,Accion> mapaRegistrado=new HashMap<String,Accion>();
 		mapaRegistrado.put("listarViajesUserRegistrado", new ListarViajesUserRegistradoAction());
 		mapaRegistrado.put("modificarDatos", new ModificarDatosAction());
-		mapaRegistrado.put("registrarViaje", new RegistroViajeAction());
+//		mapaRegistrado.put("registrarViaje", new RegistroViajeAction());
 		mapaDeAcciones.put("REGISTRADO", mapaRegistrado);
 	}
 	
