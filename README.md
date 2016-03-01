@@ -8,7 +8,7 @@ Primera práctica de SDI.
   - Consultar lista de viajes propios
   - Mostrar todos los detalles del viaje ✔
   - Modificar datos personales ✔
-  - Solicitar plaza en viaje
+  - Solicitar plaza en viaje ✔
   - Cancelar solicitud de plaza
   - Confirmar pasajeros
   - Excluir pasajeros
@@ -20,6 +20,7 @@ Primera práctica de SDI.
 ## Mejoras fundametales:
   - Mostrar mensajes de error cuando se introducen contraseñas incorrectas
   - Pruebas unitarias
+  - Avisar con un mensaje de que se ha solicitado plaza correctamente
 
 ## Tareas opcionales:  
   - ✖
