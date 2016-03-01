@@ -16,6 +16,7 @@ public class MostrarViajeAction implements Accion {
 		Trip viaje;
 		
 		Long idViaje = Long.parseLong(request.getParameter("id"));
+		request.getServletContext().setAttribute("idViaje",idViaje);
 		
 		try {
 			viaje=PersistenceFactory.newTripDao().findById(idViaje);

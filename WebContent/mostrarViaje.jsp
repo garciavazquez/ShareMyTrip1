@@ -88,11 +88,17 @@
 			</tr>	
 			<tr>
 				<th>Pasajeros máximos</th>
-				<td>${viaje.estimatedCost}</td>
-			</tr>	
-			
-				
+				<td>${viaje.maxPax}</td>
+			</tr>			
 			
 	</table>
+	
+	<form action="solicitarPlaza" method="get">
+ 	<table align="center">
+      	<tr>
+    	    <td><input type="submit" value="Solicitar plaza"/></td>
+      	</tr>
+      </table>
+   </form>
 </body>
 </html>
