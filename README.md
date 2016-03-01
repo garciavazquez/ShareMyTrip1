@@ -12,7 +12,7 @@ Primera práctica de SDI.
   - Cancelar solicitud de plaza
   - Confirmar pasajeros
   - Excluir pasajeros
-  - Registrar viaje
+  - Registrar viaje ✔
   - Modificar viaje
   - Cancelar viaje
   - Cerrar sesión
