@@ -5,6 +5,7 @@ Primera práctica de SDI.
   - Registrarse como usuario ✔
   - Iniciar sesión ✔
   - Consultar lista de viajes
+  - Mostrar todos los detalles del viaje
   - Modificar datos personales ✔
   - Solicitar plaza en viaje
   - Cancelar solicitud de plaza
@@ -17,6 +18,7 @@ Primera práctica de SDI.
 
 ## Mejoras fundametales:
   - Mostrar mensajes de error cuando se introducen contraseñas incorrectas
+  - Pruebas unitarias
 
 ## Tareas opcionales:  
   - ✖
