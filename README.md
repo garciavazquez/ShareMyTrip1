@@ -23,3 +23,6 @@ Primera práctica de SDI.
 
 ## Tareas opcionales:  
   - ✖
+
+## Notas:
+  - Modificar condiciones en el proyecto común de ListarAction: poner en las dos últimas condiciones ELSE IF en vez de IF, sino salen viajes repetidos a la hora de listar.
